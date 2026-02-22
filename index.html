@@ -2,68 +2,159 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Custom Github Header</title>
+<title>Only Music</title>
+
 <style>
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-.header {
+body {
+  background: #f2f2f2;
+}
+
+.topbar {
+  background: #0b2c5f;
+  color: white;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.navbar {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  height: 90vh;
+  background: url("music.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: relative;
-  width: 100%;
-  height: 6cm;
-  background: #0d1117;
 }
 
-.setting {
+.hero::after {
+  content: "";
   position: absolute;
-  top: 1cm;
-  left: 1cm;
-  width: 4cm;
-  height: 4cm;
-  background: #30363d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
   color: white;
 }
 
-.search {
-  position: absolute;
-  top: 1cm;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 16cm;
-  height: 4cm;
-  background: #21262d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-.account {
-  position: absolute;
-  top: 1cm;
-  right: 1cm;
-  width: 4cm;
-  height: 4cm;
-  background: #30363d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero button {
+  padding: 12px 30px;
+  background: orange;
+  border: none;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: -60px;
+  padding: 0 40px 60px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 8px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-  <div class="setting">Setting</div>
-  <div class="search">Search</div>
-  <div class="account">Account</div>
+<div class="topbar">
+  <div>Jl. Imajinasi No. 404</div>
+  <div>Instagram | Twitter</div>
+</div>
+
+<div class="navbar">
+  <h2>ONLY MUSIC</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Booking</a></li>
+  </ul>
+</div>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>ONLY MUSIC CAN SAVE US</h1>
+    <button>LISTEN NOW</button>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <h3>Playlist</h3>
+    <button>Explore</button>
+  </div>
+  <div class="card">
+    <h3>Trending</h3>
+    <button>Explore</button>
+  </div>
+  <div class="card">
+    <h3>Artists</h3>
+    <button>Explore</button>
+  </div>
+  <div class="card">
+    <h3>Events</h3>
+    <button>Explore</button>
+  </div>
 </div>
 
 </body>
