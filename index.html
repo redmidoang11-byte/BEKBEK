@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Custom Github Header</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 6cm;
+  background: #0d1117;
+}
+
+.setting {
+  position: absolute;
+  top: 1cm;
+  left: 1cm;
+  width: 4cm;
+  height: 4cm;
+  background: #30363d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.search {
+  position: absolute;
+  top: 1cm;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16cm;
+  height: 4cm;
+  background: #21262d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.account {
+  position: absolute;
+  top: 1cm;
+  right: 1cm;
+  width: 4cm;
+  height: 4cm;
+  background: #30363d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="setting">Setting</div>
+  <div class="search">Search</div>
+  <div class="account">Account</div>
+</div>
+
+</body>
+</html>
